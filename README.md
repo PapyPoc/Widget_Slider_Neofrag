@@ -12,4 +12,12 @@ Widget slider entierement personnalisable.
 6. Rajouter le widget
 7. Suivez les indications qu'il y a sur le widget
 
-Pour toutes question utilisé le Forum
+// SUPPORT & AIDES
+
+Pour toutes vos demandes d'aides, merci de nous rendre visite sur le forum à l'adresse suivante : http://www.neofrag.fr/forum.html
+
+Exposez nous votre problème/question et nous ferons notre possible pour vous répondre rapidement.
+
+// CHANGELOG
+
+27/06/2017 - 1ère diffusion du widget (compatible 1.6)
