@@ -1,4 +1,4 @@
-<?php $debug=false; ?>
+<?php $debug=TRUE; ?>
 <div role="tabpanel">
 	<ul id="navigation-tabs" class="nav nav-tabs" role="tablist">
 		<li role="presentation" class="active"><a href="#navigation-options" aria-controls="navigation-options" role="tab" data-toggle="tab"><?php echo icon('fa-cogs').' '.$this->lang('options'); ?></a></li>
@@ -64,21 +64,21 @@
 				<div class="form-group">
 					<label for="settings-resp" class="col-sm-4 control-label"><?php echo $this->lang('responsive'); ?></label>
 					<div class="col-sm-1">
-						<input type="checkbox" class="form-control" name="settings[set_resp]" id="settings-set_resp" <?php if($data['index']['set_resp'] == true ) echo ' checked'; ?> />	
+						<input type="checkbox" class="form-control" name="settings[set_resp]" id="settings-set_resp"   checked />	
 					</div>
 					<label for="settings-autoplay" class="col-sm-4 control-label"><?php echo $this->lang('l_play'); ?></label>
 					<div class="col-sm-2">
-						<input type="text" class="form-control" name="settings[set_l_play]" id="settings-set_l_play" placeholder="4" value="<?php if(isset($data['index']['set_l_play'])) echo $data['index']['set_l_play']; ?>"/>
+						<input type="text" class="form-control" name="settings[set_l_play]" id="settings-set_l_play" placeholder="4" value="<?php if(isset($data['index']['set_l_play'])) echo $data['index']['set_l_play'];if(!isset($data['index']['set_l_play'])) echo '4'; ?>"/>
 					</div>
 				</div>
 				<div class="form-group">
 					<label for="settings-largeur" class="col-sm-4 control-label"><?php echo $this->lang('largeur'); ?></label>
 					<div class="col-sm-2">
-						<input type="text" class="form-control" name="settings[set_largeur]" id="settings-set_largeur" placeholder="1500" value="<?php if(isset($data['index']['largeur'])) echo $data['index']['largeur']; ?>"/>
+						<input type="text" class="form-control" name="settings[set_largeur]" id="settings-set_largeur" placeholder="1500" value="<?php if(isset($data['index']['largeur'])) echo $data['index']['largeur'];if(!isset($data['index']['largeur'])) echo '1500';?>"/>
 					</div>
 					<label for="settings-hauteur" class="col-sm-4 control-label"><?php echo $this->lang('hauteur'); ?></label>
 					<div class="col-sm-2">
-						<input type="text" class="form-control" name="settings[set_hauteur]" id="settings-set_hauteur" placeholder="500" value="<?php if(isset($data['index']['hauteur'])) echo $data['index']['hauteur']; ?>"/>
+						<input type="text" class="form-control" name="settings[set_hauteur]" id="settings-set_hauteur" placeholder="500" value="<?php if(isset($data['index']['hauteur'])) echo $data['index']['hauteur'];if(!isset($data['index']['hauteur'])) echo '500'; ?>"/>
 					</div>
 				</div>
 				<div class="form-group">
