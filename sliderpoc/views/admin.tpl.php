@@ -132,7 +132,7 @@
 					</div>
 				</div>
 				<div class="panel-group" id="accordion<?php echo $key; ?>" role="tablist" aria-multiselectable="true">
-<!-- Texte N°1 --><?php for ($texte=1; $texte <= 3; $texte++) { ?>
+<!-- Texte N°1 --><?php for ($texte=1; $texte <= 5; $texte++) { ?>
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="heading<?php echo $key; ?><?php echo $texte; ?>">
 							<h4 class="panel-title">
