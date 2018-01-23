@@ -6,7 +6,7 @@
 			<li data-effect="<?php echo $data['index']['set_img_effect_'.$key]; ?>">
 				<a href="#">
 					<img class="img-responsive"
-						src="widgets/sliderpoc/images/assets/spacer.png" data-src="<?php echo path($data['images'][$key-1]['file_id']); ?>" data-thumb="<?php echo path($data['images'][$key-1]['thumbnail_file_id']); ?>" data-toggle="tooltip" title="<?php echo $data['image']['title']; ?>" />
+						src="widgets/sliderpoc/images/assets/spacer.png" data-src="<?php echo path($data['images'][$key-1]['file_id']); ?>" data-thumb="<?php echo path($data['images'][$key-1]['thumbnail_file_id']); ?>" data-toggle="tooltip" title="<?php echo $data['images']['title']; ?>" />
 				</a>
 				<?php for ($texte=1; $texte <= 3; $texte++) { if (!empty($data['index']['set_text'.$texte.'_'.$key])) { ?>
 							<h3 
